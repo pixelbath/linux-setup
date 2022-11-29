@@ -9,7 +9,7 @@ function linkDotfile {
   if [ -h ~/${1} ]; then
     # Existing symlink 
     echo "Removing existing symlink: ${dest}"
-    rm ${dest} 
+    rm -f ${dest} 
 
   elif [ -f "${dest}" ]; then
     # Existing file
